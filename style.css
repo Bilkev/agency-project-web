@@ -56,6 +56,17 @@ body, h1, h2, p {
   .card:nth-child(odd) {
     order: 2; /* Reorder odd cards for better mobile layout */
   }
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Meadia quearie to fix big fonts in small screens*/
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
 }
 
 /* Clear the float after the cards */
