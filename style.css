@@ -1,0 +1,75 @@
+/* Reset some default styles */
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+
+}
+
+/*styling for Logo*/
+
+#navbar {
+  padding: 30px;
+  margin-left: 70%;
+  display: block;
+  float: right;
+}
+
+/*additional h1 styling*/
+
+.main-text {
+  display: block;
+  padding: 1% 20%;
+  text-align: center;
+}
+
+/* Basic styling for the layout */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: calc(50% - 20px);
+}
+
+.tile-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  
+  .card:nth-child(odd) {
+    order: 2; /* Reorder odd cards for better mobile layout */
+  }
+}
+
+/* Clear the float after the cards */
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Styling for the footer */
+footer {
+  clear: both;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+}
+
